@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+ <context:annotation-config/>
+ 
+ <context:component-scan base-package="springworld" />
+ 
+ <bean id="datasource" class="com.mchange.v2.c3p0.CombopooledDataSource">
+     <property  name="driveClass" value="org.h2.Driver"/>
+     <property name="jdbcUrl" value="jdbc:h2:mem:test;DB_CLOSE_DELAY=-1"/>
+     <property name="user" value="sa"/>
+     <property name="password" value=""/>
+ </bean>
+
+
+<!--  <bean id="loan123" class="springworld.Loan">
+    <property name="loadId" value="1"/>
+    <property name="loanAmount" value="1000"/>
+</bean>
+
+<bean id="myLoan" class="springworld.Loan">
+    <property name="loadId" value="2"/>
+    <property name="loanAmount" value="2000"/>
+</bean>
+
+<bean id="person" class="springworld.Person">
+     
+</bean> -->
+
+</beans>
