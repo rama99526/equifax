@@ -1,4 +1,5 @@
 <dataset>
    <vehicle  V_ID="1" V_model_NAME="HONDA_CRV"  V_model_YEAR="2014"/>
    <vehicle  V_ID="2" V_model_NAME="CAMRY"  V_model_YEAR="2000"/>
+   <vehicle  V_ID="3" V_model_NAME="CAMRY"  V_model_YEAR="2000"/>
 </dataset>
