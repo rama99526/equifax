@@ -17,6 +17,10 @@
      <property name="user" value="sa"/>
      <property name="password" value=""/>
  </bean>
+ <bean id="vehicledao" 
+      class="dao.VehicleDAO">
+      <property name="dataSource"  ref="datasource" />    
+   </bean>
 
 
 <!--  <bean id="loan123" class="springworld.Loan">
